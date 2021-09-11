@@ -18,15 +18,17 @@ public class MainPageController {
         this.bookService=bookService;
     }
 
-    @GetMapping("/")
+    @GetMapping("/main")
     public String mainPage(Model model){
         model.addAttribute("bookData", bookService.getBooksData());
+
         return "index";
     }
 
     @GetMapping("/genres")
     public String genrePage(Model model){
         model.addAttribute("bookData", bookService.getBooksData());
-        return "/genres/index";
+
+        return "genres";
     }
 }
