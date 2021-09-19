@@ -22,7 +22,7 @@ public class MainPageController {
     public String mainPage(Model model){
         model.addAttribute("bookData", bookService.getBooksData());
 
-        return "index";
+        return "main";
     }
 
     @GetMapping("/genres")
