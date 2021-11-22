@@ -1,8 +1,3 @@
-create table authors (
-	id INT,
-	first_name VARCHAR(50),
-	last_name VARCHAR(50)
-);
 insert into authors (id, first_name, last_name) values (1, 'Justinn', 'Duham');
 insert into authors (id, first_name, last_name) values (2, 'Rey', 'Thewlis');
 insert into authors (id, first_name, last_name) values (3, 'Rhea', 'Jovey');

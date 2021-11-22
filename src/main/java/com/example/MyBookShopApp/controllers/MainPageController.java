@@ -32,4 +32,9 @@ public class MainPageController {
     public String mainPage(Model model){
         return "index";
     }
+
+    @GetMapping("/index")
+    public String mainPageIndex(Model model){
+        return "index";
+    }
 }
